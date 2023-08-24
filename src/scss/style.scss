@@ -1,0 +1,213 @@
+@import 'variables';
+@import 'mixins';
+@import 'custom-bootstrap';
+@import 'utilities-api.scss';
+@import 'mdb.free';
+
+h1, h2, h3
+{
+   @include title;
+}
+h4, h5, h6
+{
+   @include sub-title;
+}
+p
+{
+   @include text;
+}
+
+.navbar
+{
+   background-color: $primary-1;
+   padding: 1rem 0;
+   .navbar-toggler
+   {
+      color: $secondary-1;
+   }
+   .navbar-nav 
+   {
+      margin: 0;
+      padding: 0;
+   }
+   .navbar-brand
+   {
+      padding: 0.5rem 0.5rem 0.75rem;
+      margin: 0;
+      position: relative;
+   }
+   .navbar-brand::after
+   {
+      @include nav-item-border;
+   }
+   .navbar-brand:hover::after
+   {
+      width: 100%;
+      left: 0;
+   }
+   .navbar-title
+   {
+      @include title;
+      color: $primary-2;
+   }
+   .nav-item
+   {
+      margin-right:  3rem;
+      padding: 0.5rem 0.5rem 0.75rem;
+      position: relative;
+   }
+   .nav-item::after
+   {
+      @include nav-item-border;
+   }
+   .nav-item:hover::after
+   {
+      width: 100%;
+      left: 0;
+   }
+   .nav-link
+   {
+      @include title;
+      padding: 0 0.5rem;
+   }
+   @media screen and (max-width: 991px) 
+   {
+      .navbar-title
+      {
+         display: block;
+         margin: auto;
+      }
+      .nav-item
+      {
+         text-align: center;
+      }
+   }
+}
+.navbar.navbar-before-scroll
+{
+   @media screen and (min-width: 992px)
+   {
+      background-color: transparent;
+      .navbar-brand::after, .nav-item::after
+      {
+         background-color: $primary-1;
+      }
+      .navbar-title, .nav-link
+      {
+         color: $primary-1;
+      }
+      transition: all 0.5s ease-in-out; 
+   }
+}
+.navbar.navbar-after-scroll
+{
+   @media screen and (min-width: 992px)
+   {
+      .navbar-brand::after, .nav-item::after
+      {
+         background-color: $primary-2;
+      }
+      .navbar-title 
+      {
+         color: $primary-2;
+      }
+      .nav-link
+      {
+         color: $secondary-1;
+      }
+      background-color: $primary-1;
+      transition: all 0.5s ease-in-out; 
+   }
+}
+
+#intro
+{
+   height: 100vh;
+   .title
+   {
+      color: $secondary-2;
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+   }
+   .sub-title
+   {
+      color: $secondary-2;
+      font-weight: bold;
+      text-align: center;
+   }
+   .text
+   {
+      color: $secondary-2;
+      font-weight: bolder;
+   }
+   i
+   {
+      color: $secondary-2;
+   }
+   .intro-icon
+   {
+      font-size: 5rem;
+   }
+   @media screen and (min-width: 1400px)
+   {
+      height: 100vh;
+      .intro-icon
+      {
+         font-size: 4.5rem;
+      }
+   }
+   @media screen and (min-width: 1200px) and (max-width: 1399px)
+   {
+      height: 110vh;
+      .intro-icon
+      {
+         font-size: 4rem;
+      }
+   }
+   @media screen and (min-width: 992px) and (max-width: 1199px)
+   {
+      .intro-icon
+      {
+         font-size: 3.5rem;
+      }
+   }
+   @media screen and (min-width: 768px) and (max-width: 991px)
+   {
+      .intro-icon
+      {
+         font-size: 3rem;
+      }
+   }
+   @media screen and (min-width: 576px) and (max-width: 767px)
+   {
+      .intro-icon
+      {
+         display: none;
+      }
+      h3.sub-title
+      {
+         white-space: nowrap;
+      }
+   }
+   @media screen and (max-width: 575px)
+   {
+      height: 110vh;
+      .intro-icon
+      {
+         display: none;
+      }
+      h3.sub-title
+      {
+         white-space: nowrap;
+      }
+   }
+}
+.mask-dark
+{
+   background-color: rgba(0, 0, 0, 0.5);
+}
+.hr-white
+{
+   border: 4px solid white;
+}
