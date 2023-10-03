@@ -26,7 +26,7 @@ function getCurrentDate()
   return current_day;
 }
 
-function getCurrentMonthName()
+function getRomanianMonth()
 {
   const current_month = getCurrentMonth();
   const months = ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie",
@@ -34,6 +34,17 @@ function getCurrentMonthName()
                   ];
   let month = months[current_month];
   return month;
+}
+
+function getRomanianFullDate()
+{
+  const current_date = getCurrentDate();
+  const current_month = getRomanianMonth(); 
+  const current_year = getCurrentYear();
+  const current_fullDate = current_date + " " + current_month + 
+  " " + current_year;
+
+  return current_fullDate;
 }
 
 function navbarScroll()
@@ -49,16 +60,12 @@ function navbarScroll()
     })
 }
 
-function myDate()
+function showMyDate()
 {
-  const current_date = getCurrentFullDate();
-  const current_month = thisMonth(); 
-  const current_year = getCurrentYear();
-
-  document.getElementById("intro-title").innerHTML = "Azi, "
-   + current_date.getDate() + " " + current_month
-   + " " + current_year;
+  const current_fullDate = getRomanianFullDate();
+  const element = document.getElementById("intro-title");
+  element.innerHTML = "Azi, " + current_fullDate;
 }
 
 navbarScroll();
-myDate();
+showMyDate();
