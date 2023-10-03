@@ -26,53 +26,14 @@ function getCurrentDate()
   return current_day;
 }
 
-function thisMonth()
+function getCurrentMonthName()
 {
-  const current_date = getCurrentFullDate();
-  const month = current_date.getMonth();
-
-  let current_month;
-
-  switch(month)
-  {
-    case 0:
-      current_month = "Ianuarie";
-      break;
-    case 1:
-      current_month = "Februarie";
-      break;
-    case 2:
-      current_month = "Martie";
-      break;
-    case 3:
-      current_month = "Aprilie";
-      break;
-    case 4:
-      current_month = "Mai";
-      break;
-    case 5:
-      current_month = "Iunie";
-      break;
-    case 6:
-      current_month = "Iulie";
-      break;
-    case 7:
-      current_month = "August";
-      break;
-    case 8:
-      current_month = "Septembrie";
-      break;
-    case 9:
-      current_month = "Octombrie";
-      break;
-    case 10:
-      current_month = "Noiembrie";
-      break;
-    case 11:
-      current_month = "Decembrie";
-  }
-
-  return current_month;
+  const current_month = getCurrentMonth();
+  const months = ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie",
+                  "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"
+                  ];
+  let month = months[current_month];
+  return month;
 }
 
 function navbarScroll()
