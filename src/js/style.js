@@ -1,20 +1,34 @@
 
-function thisDate()
+function getCurrentFullDate()
 {
   const current_date = new Date();
   return current_date;
 }
 
-function thisYear()
+function getCurrentYear()
 {
-  const current_date = thisDate();
+  const current_date = getCurrentFullDate();
   const current_year = current_date.getFullYear();
   return current_year;
 }
 
+function getCurrentMonth()
+{
+  const current_date = getCurrentFullDate();
+  const current_month = current_date.getMonth();
+  return current_month;
+}
+
+function getCurrentDate()
+{
+  const current_date = getCurrentFullDate();
+  const current_day = current_date.getDate();
+  return current_day;
+}
+
 function thisMonth()
 {
-  const current_date = thisDate();
+  const current_date = getCurrentFullDate();
   const month = current_date.getMonth();
 
   let current_month;
@@ -76,9 +90,9 @@ function navbarScroll()
 
 function myDate()
 {
-  const current_date = thisDate();
+  const current_date = getCurrentFullDate();
   const current_month = thisMonth(); 
-  const current_year = thisYear();
+  const current_year = getCurrentYear();
 
   document.getElementById("intro-title").innerHTML = "Azi, "
    + current_date.getDate() + " " + current_month
