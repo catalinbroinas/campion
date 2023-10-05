@@ -52,7 +52,7 @@ function navbarScroll()
   const navbar = document.getElementById("main-navbar");
 
   window.addEventListener('scroll', function () {
-      if (window.pageYOffset > 0) {
+      if (window.pageYOffset > 50) {
         navbar.classList.add("navbar-after-scroll")
       } else {
         navbar.classList.remove("navbar-after-scroll")
