@@ -18,6 +18,13 @@
     color: $secondary-1;
 }
 
+// Layout
+@mixin jumbotron
+{
+    padding: 3rem 2rem;
+    background-color: $primary-1;
+}
+
 // Animation
 @mixin nav-item-border
 {

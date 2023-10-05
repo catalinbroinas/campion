@@ -16313,6 +16313,21 @@ p {
   color: #332D2D;
 }
 
+.title {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.jumbotron {
+  padding: 3rem 2rem;
+  background-color: #FBFBFB;
+}
+
 .navbar {
   background-color: #FBFBFB;
   padding: 1rem 0;
@@ -16489,4 +16504,10 @@ p {
 
 .hr-white {
   border: 4px solid white;
+}
+
+.hr-red {
+  border: 0.35rem #CC0000 solid;
+  width: 8vw;
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */

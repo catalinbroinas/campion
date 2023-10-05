@@ -18,6 +18,23 @@ p
    @include text;
 }
 
+.title
+{
+   font-weight: 800;
+   font-size: 3rem;
+}
+.text
+{
+   font-weight: 400;
+   font-size: 1.25rem;
+}
+
+// Layout
+.jumbotron
+{
+   @include jumbotron;
+}
+
 // Navbar
 .navbar
 {
@@ -215,4 +232,10 @@ p
 .hr-white
 {
    border: 4px solid white;
+}
+.hr-red
+{
+   border: 0.35rem $primary-2 solid;
+   width: 8vw;
+   opacity: 0.8;
 }
