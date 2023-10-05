@@ -149,9 +149,8 @@ p
 }
 
 // Intro section
-#intro
+.intro
 {
-   height: 100vh;
    .title
    {
       color: $secondary-2;
@@ -174,14 +173,18 @@ p
    {
       color: $secondary-2;
    }
-   .intro-icon
+}
+#intro
+{
+   height: 100vh;
+   .icon-intro
    {
       font-size: 5rem;
    }
    @media screen and (min-width: 1400px)
    {
       height: 100vh;
-      .intro-icon
+      .icon-intro
       {
          font-size: 4.5rem;
       }
@@ -189,28 +192,28 @@ p
    @media screen and (min-width: 1200px) and (max-width: 1399px)
    {
       height: 110vh;
-      .intro-icon
+      .icon-intro
       {
          font-size: 4rem;
       }
    }
    @media screen and (min-width: 992px) and (max-width: 1199px)
    {
-      .intro-icon
+      .icon-intro
       {
          font-size: 3.5rem;
       }
    }
    @media screen and (min-width: 768px) and (max-width: 991px)
    {
-      .intro-icon
+      .icon-intro
       {
          font-size: 3rem;
       }
    }
    @media screen and (min-width: 576px) and (max-width: 767px)
    {
-      .intro-icon
+      .icon-intro
       {
          display: none;
       }
@@ -222,7 +225,7 @@ p
    @media screen and (max-width: 575px)
    {
       height: 110vh;
-      .intro-icon
+      .icon-intro
       {
          display: none;
       }

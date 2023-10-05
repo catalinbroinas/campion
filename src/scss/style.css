@@ -16434,35 +16434,36 @@ p {
   }
 }
 
-#intro {
-  height: 100vh;
-}
-#intro .title {
+.intro .title {
   color: white;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
 }
-#intro .sub-title {
+.intro .sub-title {
   color: white;
   font-weight: bold;
   text-align: center;
 }
-#intro .text {
+.intro .text {
   color: white;
   font-weight: bolder;
 }
-#intro i {
+.intro i {
   color: white;
 }
-#intro .intro-icon {
+
+#intro {
+  height: 100vh;
+}
+#intro .icon-intro {
   font-size: 5rem;
 }
 @media screen and (min-width: 1400px) {
   #intro {
     height: 100vh;
   }
-  #intro .intro-icon {
+  #intro .icon-intro {
     font-size: 4.5rem;
   }
 }
@@ -16470,22 +16471,22 @@ p {
   #intro {
     height: 110vh;
   }
-  #intro .intro-icon {
+  #intro .icon-intro {
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  #intro .intro-icon {
+  #intro .icon-intro {
     font-size: 3.5rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  #intro .intro-icon {
+  #intro .icon-intro {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  #intro .intro-icon {
+  #intro .icon-intro {
     display: none;
   }
   #intro h3.sub-title, #intro .sub-title.h3 {
@@ -16496,7 +16497,7 @@ p {
   #intro {
     height: 110vh;
   }
-  #intro .intro-icon {
+  #intro .icon-intro {
     display: none;
   }
   #intro h3.sub-title, #intro .sub-title.h3 {
