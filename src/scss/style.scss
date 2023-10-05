@@ -4,6 +4,7 @@
 @import 'utilities-api.scss';
 @import 'mdb.free';
 
+// Typography
 h1, h2, h3
 {
    @include title;
@@ -17,6 +18,7 @@ p
    @include text;
 }
 
+// Navbar
 .navbar
 {
    background-color: $primary-1;
@@ -120,6 +122,7 @@ p
    }
 }
 
+// Intro section
 #intro
 {
    height: 100vh;
@@ -203,6 +206,8 @@ p
       }
    }
 }
+
+// Style
 .mask-dark
 {
    background-color: rgba(0, 0, 0, 0.5);
