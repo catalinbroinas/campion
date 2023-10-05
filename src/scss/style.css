@@ -16509,6 +16509,10 @@ p {
   }
 }
 
+.bg-gray {
+  background-color: #FBFBFB;
+}
+
 .mask-dark {
   background-color: rgba(0, 0, 0, 0.5);
 }
