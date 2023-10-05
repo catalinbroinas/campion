@@ -16406,6 +16406,7 @@ p {
   }
   .navbar .nav-item {
     text-align: center;
+    margin-right: 0;
   }
 }
 
