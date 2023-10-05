@@ -28,6 +28,7 @@ p
    font-weight: 400;
    font-size: 1.25rem;
 }
+
 @media screen and (max-width: 575px)
 {
    .title
@@ -41,12 +42,6 @@ p
       font-size: 1rem;
    }
 } 
-
-// Layout
-.jumbotron
-{
-   @include jumbotron;
-}
 
 // Navbar
 .navbar
@@ -238,8 +233,22 @@ p
    }
 }
 
+// Components
+.jumbotron
+{
+   @include jumbotron;
+}
+.jumbotron:nth-child(odd)
+{
+   background-color: $bg-gray;
+}
+.jumbotron:nth-child(even)
+{
+   background-color: $bg-light-blue;
+}
+
 // Style
-.bg-gray
+.bg-light-gray
 {
    background-color: $primary-1;
 }

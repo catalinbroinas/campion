@@ -16333,11 +16333,6 @@ p {
     font-size: 1rem;
   }
 }
-.jumbotron {
-  padding: 3rem 2rem;
-  background-color: #FBFBFB;
-}
-
 .navbar {
   background-color: #FBFBFB;
   padding: 1rem 0;
@@ -16509,7 +16504,20 @@ p {
   }
 }
 
-.bg-gray {
+.jumbotron {
+  padding: 4rem 2rem;
+  background-color: #FBFBFB;
+}
+
+.jumbotron:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+
+.jumbotron:nth-child(even) {
+  background-color: #E1F5FE;
+}
+
+.bg-light-gray {
   background-color: #FBFBFB;
 }
 
