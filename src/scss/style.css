@@ -16323,6 +16323,16 @@ p {
   font-size: 1.25rem;
 }
 
+@media screen and (max-width: 575px) {
+  .title {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
 .jumbotron {
   padding: 3rem 2rem;
   background-color: #FBFBFB;
